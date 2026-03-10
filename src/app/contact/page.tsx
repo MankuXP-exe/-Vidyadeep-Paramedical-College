@@ -172,7 +172,7 @@ export default function ContactPage() {
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
-                    allowFullScreen=""
+                    allowFullScreen={true}
                     loading="lazy"
                 ></iframe>
                 <div className="absolute bottom-8 left-8 right-8 md:right-auto md:w-96 bg-white p-6 rounded-3xl shadow-2xl border border-primary/10">
