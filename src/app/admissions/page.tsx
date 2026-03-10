@@ -2,6 +2,7 @@
 
 import * as React from "react"
 import { motion } from "framer-motion"
+import Link from "next/link"
 import {
     User,
     Phone,
@@ -71,9 +72,12 @@ export default function AdmissionsPage() {
                     <p className="text-muted-foreground">
                         Thank you for applying to Vidyadeep Paramedical College. Our admissions team will contact you shortly on your provided phone number/email.
                     </p>
-                    <Button asChild className="rounded-full px-8">
-                        <a href="/">Return to Home</a>
-                    </Button>
+                    <Link
+                        href="/"
+                        className="inline-flex items-center justify-center rounded-full bg-primary hover:bg-primary/90 text-white h-11 px-8 shadow-lg font-medium transition-colors"
+                    >
+                        Return to Home
+                    </Link>
                 </motion.div>
             </div>
         )

@@ -104,10 +104,8 @@ export default function ApplicationsPage() {
                                     </td>
                                     <td className="px-8 py-6 text-right">
                                         <DropdownMenu>
-                                            <DropdownMenuTrigger asChild>
-                                                <Button variant="ghost" size="icon" className="rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
-                                                    <MoreVertical className="h-4 w-4" />
-                                                </Button>
+                                            <DropdownMenuTrigger className="rounded-full opacity-0 group-hover:opacity-100 transition-opacity hover:bg-gray-100 p-2 cursor-pointer outline-none">
+                                                <MoreVertical className="h-4 w-4 text-muted-foreground" />
                                             </DropdownMenuTrigger>
                                             <DropdownMenuContent align="end" className="w-48 rounded-xl p-2">
                                                 <DropdownMenuLabel>Actions</DropdownMenuLabel>

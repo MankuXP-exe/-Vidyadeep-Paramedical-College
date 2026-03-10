@@ -1,6 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 import {
     Microscope,
     Activity,
@@ -174,9 +175,12 @@ export default function CoursesPage() {
                                                 </p>
                                             </div>
 
-                                            <Button asChild variant="outline" className="rounded-full border-primary/20 text-primary hover:bg-primary hover:text-white mt-2">
-                                                <a href="/admissions">Apply Now</a>
-                                            </Button>
+                                            <Link
+                                                href="/admissions"
+                                                className="inline-flex items-center justify-center rounded-full border border-primary/20 text-primary hover:bg-primary hover:text-white h-9 px-4 text-sm font-medium transition-colors mt-2"
+                                            >
+                                                Apply Now
+                                            </Link>
                                         </div>
                                     </div>
                                 </GlassCard>

@@ -2,6 +2,7 @@
 
 import * as React from "react"
 import Image from "next/image"
+import Link from "next/link"
 import { motion, AnimatePresence } from "framer-motion"
 import { Maximize2, X, ChevronLeft, ChevronRight, Camera } from "lucide-react"
 import { Section, SectionTitle } from "@/components/ui/custom-sections"
@@ -172,9 +173,12 @@ export default function GalleryPage() {
                     <p className="text-muted-foreground">
                         Join our campus and be part of the most vibrant medical community in Gurugram.
                     </p>
-                    <Button asChild className="rounded-full shadow-lg">
-                        <a href="/admissions">Join Our Next Batch</a>
-                    </Button>
+                    <Link
+                        href="/admissions"
+                        className="inline-flex items-center justify-center rounded-full bg-primary hover:bg-primary/90 text-white h-11 px-8 shadow-lg font-medium transition-colors"
+                    >
+                        Join Our Next Batch
+                    </Link>
                 </div>
             </Section>
         </div>
