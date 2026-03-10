@@ -18,6 +18,7 @@ export const metadata: Metadata = {
   title: "Vidyadeep Paramedical College | Build Your Medical Career",
   description: "Join Vidyadeep Paramedical College for top-tier medical education. 100% job placement, foreign internship programs (Japan), and world-class faculty.",
   keywords: ["Vidyadeep", "Paramedical", "College", "Nursing", "DMLT", "BPT", "Medical Career"],
+  generator: "Vidyadeep College v1.0.1",
 };
 
 export default function RootLayout({
